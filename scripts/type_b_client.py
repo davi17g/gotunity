@@ -5,6 +5,7 @@ import socket
 import argparse
 import threading
 
+
 MSG_SIZE = 1024
 CONNECT_MSG = "CONNECT\r\n"
 DISCONNECT_MSG = "DISCONNECT\r\n"

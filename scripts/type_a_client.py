@@ -26,16 +26,10 @@ def main():
     host, port = check_args(sys.argv[1:])
     soc = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-
     while True:
         msg = bytearray(random.getrandbits(8) for _ in range(MSG_SIZE))
         time.sleep(0.1)
         soc.sendto(msg, (host, int(port)))
-
-
-
-
-
 
 
 if __name__ == '__main__':
